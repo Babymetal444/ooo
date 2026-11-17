@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마케팅온 AI - 소상공인 셀프 마케팅 대시보드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Top Navigation -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-600/30 text-white font-bold">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span class="font-bold text-base tracking-tight text-white">마케팅온 <span class="text-indigo-400">AI 대시보드</span></span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <span class="w-2 h-2 mr-1.5 rounded-full bg-emerald-400 animate-pulse"></span> 매장 시스템 실시간 연동중
+                </span>
+                <a href="index.html" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-300 transition">
+                    <i class="fa-solid fa-house mr-1"></i> 랜딩 홈으로
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Container -->
+    <main class="max-w-7xl mx-auto px-6 py-8 flex-1 w-full grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="lg:col-span-3 space-y-4">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl space-y-2">
+                <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider px-3 mb-2">마케팅 메뉴</p>
+                
+                <button onclick="switchTab('overview')" id="nav-overview" class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-sm font-semibold transition bg-indigo-600 text-white shadow-lg shadow-indigo-600/20">
+                    <i class="fa-solid fa-house-chimney w-5"></i> <span>종합 현황 대시보드</span>
+                </button>
+                <button onclick="switchTab('generator')" id="nav-generator" class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-sm font-semibold transition bg-slate-800/50 text-slate-300 hover:bg-slate-800 hover:text-white">
+                    <i class="fa-solid fa-wand-magic-sparkles w-5"></i> <span>AI 홍보글 · 콘티 생성기</span>
+                </button>
+                <button onclick="switchTab('camera')" id="nav-camera" class="w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-sm font-semibold transition bg-slate-800/50 text-slate-300 hover:bg-slate-800 hover:text-white">
+                    <i class="fa-solid fa-camera-retro w-5"></i> <span>AR 3x3 촬영 가이드</span>
+                </button>
+            </div>
+
+            <div class="bg-indigo-950/30 border border-indigo-500/20 rounded-2xl p-4">
+                <div class="flex items-center space-x-3 mb-2">
+                    <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-sm font-bold">☕</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">성수 행복카페 사장님</h4>
+                        <p class="text-[10px] text-slate-400">카페·디저트 업종</p>
+                    </div>
+                </div>
+                <p class="text-[11px] text-slate-300 leading-relaxed">
+                    이번 주 추천 마케팅 미션과 초단위 AR 콘티를 활용해 매장 유입을 늘려보세요!
+                </p>
+            </div>
+        </aside>
+
+        <!-- Content Area -->
+        <section class="lg:col-span-9 space-y-6">
+            
+            <!-- Tab 1: Overview Dashboard -->
+            <div id="tab-overview" class="space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                    <div>
+                        <h2 class="text-xl font-black text-white">매장 마케팅 성과 현황</h2>
+                        <p class="text-xs text-slate-400">AI 마케팅 솔루션을 도입한 이후의 실시간 지표입니다.</p>
+                    </div>
+                    <span class="text-xs font-semibold bg-indigo-500/10 text-indigo-400 px-3 py-1 rounded-full border border-indigo-500/20">2026년 기준</span>
+                </div>
+
+                <!-- Metric Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg">
+                        <p class="text-xs font-medium text-slate-400 mb-1">이번 달 SNS 유입 증가율</p>
+                        <h3 class="text-2xl font-black text-emerald-400">+42.8%</h3>
+                        <p class="text-[10px] text-slate-500 mt-2">인스타그램 · 당근마켓 연동 효과</p>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg">
+                        <p class="text-xs font-medium text-slate-400 mb-1">리뷰 자동 답글 처리율</p>
+                        <h3 class="text-2xl font-black text-indigo-400">100%</h3>
+                        <p class="text-[10px] text-slate-500 mt-2">고객 만족도 별점 4.9 유지</p>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg">
+                        <p class="text-xs font-medium text-slate-400 mb-1">콘텐츠 기획 소요 시간</p>
+                        <h3 class="text-2xl font-black text-amber-400">-90% 단축</h3>
+                        <p class="text-[10px] text-slate-500 mt-2">평균 30분 ➔ 3분 소요</p>
+                    </div>
+                </div>
+
+                <!-- AI Quick Recommendation Banner -->
+                <div class="bg-gradient-to-r from-indigo-950/60 to-slate-900 border border-indigo-500/30 rounded-2xl p-6 relative overflow-hidden">
+                    <div class="absolute right-4 top-4 text-indigo-500/20 text-6xl pointer-events-none">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h4 class="text-sm font-bold text-indigo-300 mb-1"><i class="fa-solid fa-bell mr-1.5"></i> 오늘의 맞춤 AI 마케팅 코칭</h4>
+                    <p class="text-sm text-slate-200 font-medium mb-4">"비 오는 오후, 따뜻한 수제 바닐라 라떼 15% 할인 쿠폰을 당근마켓과 인스타스토리에 발행해 보세요!"</p>
+                    <button onclick="switchTab('generator')" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold rounded-xl transition shadow-md shadow-indigo-600/30">
+                        AI 홍보글 지금 바로 생성하기 →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab 2: AI Generator -->
+            <div id="tab-generator" class="space-y-6 hidden">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                    <div>
+                        <h2 class="text-xl font-black text-white">AI 홍보글 및 숏폼 콘티 생성기</h2>
+                        <p class="text-xs text-slate-400">업종과 핵심 키워드만 넣으면 3초 만에 최적의 카피가 완성됩니다.</p>
+                    </div>
+                    <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full border border-emerald-500/20">Rule-LLM 연동됨</span>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 shadow-xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase mb-2">세부 업종 선택</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 outline-none focus:border-indigo-500">
+                                <option>☕ 카페 / 베이커리</option>
+                                <option>🍽️ 일반 음식점</option>
+                                <option>✨ 뷰티 / 에스테틱</option>
+                                <option>🎨 공방 / 원데이클래스</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase mb-2">핵심 상품 및 키워드</label>
+                            <input type="text" value="#수제바닐라라떼 #크로플맛집 #주말데이트" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 outline-none focus:border-indigo-500">
+                        </div>
+                    </div>
+
+                    <button onclick="runAIGenerator()" class="w-full py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition shadow-lg shadow-indigo-600/30 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> <span>3초 만에 홍보 문구 & 콘티 생성하기</span>
+                    </button>
+                </div>
+
+                <!-- Generation Result Box -->
+                <div id="result-box" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 hidden">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                        <h3 class="font-bold text-sm text-indigo-300"><i class="fa-solid fa-check-circle mr-1"></i> AI 생성 완료된 홍보 캡션 & 숏폼 타임라인</h3>
+                        <span class="text-[10px] text-slate-400">생성 소요 시간: 0.24초</span>
+                    </div>
+                    <div class="bg-slate-950 rounded-xl p-4 border border-slate-800/80 text-xs font-mono text-slate-300 space-y-2">
+                        <p class="text-amber-300">📌 인스타그램 추천 캡션:</p>
+                        <p class="text-slate-100">"달콤 쌉싸름한 수제 바닐라라떼와 겉바속촉 크로플의 조합 ☕ 이번 주말, 행복카페에서 달콤한 여유를 즐겨보세요! ✨"</p>
+                        <p class="text-slate-500">#성수카페 #크로플맛집 #수제라떼 #주말데이트</p>
+                    </div>
+                    <div class="pt-2">
+                        <button onclick="switchTab('camera')" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-indigo-300 text-xs font-bold rounded-xl transition border border-indigo-500/30 flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-camera"></i> <span>이 콘티 그대로 AR 3x3 촬영 가이드 보기 →</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: AR Camera Guide -->
+            <div id="tab-camera" class="space-y-6 hidden">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                    <div>
+                        <h2 class="text-xl font-black text-white">스마트폰 3x3 AR 그리드 촬영 가이드</h2>
+                        <p class="text-xs text-slate-400">초보 사장님도 화면 그리드와 자막 가이드를 보며 5분 만에 숏폼을 촬영할 수 있습니다.</p>
+                    </div>
+                    <span class="text-xs font-semibold bg-rose-500/10 text-rose-400 px-3 py-1 rounded-full border border-rose-500/20 animate-pulse">● LIVE AR UX</span>
+                </div>
+
+                <!-- Simulated AR Camera Viewport -->
+                <div class="relative w-full h-80 bg-slate-950 border-2 border-indigo-500/40 rounded-2xl overflow-hidden flex items-center justify-center shadow-inner">
+                    <div class="absolute inset-0 grid grid-cols-3 grid-rows-3 pointer-events-none">
+                        <div class="border border-white/10"></div>
+                        <div class="border border-white/10 bg-indigo-600/15 flex items-center justify-center p-2">
+                            <span class="text-[11px] text-indigo-200 font-bold bg-slate-950/90 px-2 py-1 rounded-md border border-indigo-500/40 text-center shadow">0~3초: 탑뷰 클로즈업 훅</span>
+                        </div>
+                        <div class="border border-white/10"></div>
+                        <div class="border border-white/10"></div>
+                        <div class="border border-white/10"></div>
+                        <div class="border border-white/10"></div>
+                        <div class="border border-white/10"></div>
+                        <div class="border border-white/10"></div>
+                        <div class="border border-white/10"></div>
+                    </div>
+                    <div class="absolute bottom-6 bg-slate-900/95 border border-indigo-500/40 px-5 py-2.5 rounded-xl text-center shadow-xl">
+                        <p class="text-xs text-indigo-300 font-bold">💬 자막 가이드: "아직도 시럽만 추가해서 드시나요?"</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 bg-slate-950 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>Kyungsung University | AI-Data-Based Service Planning MVP</p>
+            <p>© 2026 마케팅온 AI (MKON AI). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        function switchTab(tabId) {
+            const tabs = ['overview', 'generator', 'camera'];
+            tabs.forEach(t => {
+                const view = document.getElementById(`tab-${t}`);
+                const nav = document.getElementById(`nav-${t}`);
+                if (t === tabId) {
+                    view.classList.remove('hidden');
+                    nav.className = "w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-sm font-semibold transition bg-indigo-600 text-white shadow-lg shadow-indigo-600/20";
+                } else {
+                    view.classList.add('hidden');
+                    nav.className = "w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-sm font-semibold transition bg-slate-800/50 text-slate-300 hover:bg-slate-800 hover:text-white";
+                }
+            });
+        }
+
+        function runAIGenerator() {
+            const resultBox = document.getElementById('result-box');
+            resultBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

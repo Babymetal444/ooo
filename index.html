@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마케팅온 AI - 소상공인을 위한 AI 셀프 마케팅 솔루션</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .lemon-gradient { background: linear-gradient(135deg, #fef08a 0%, #fde047 100%); }
+        .lemon-badge { background-color: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-yellow-300 selection:text-slate-900">
+
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-2xl bg-yellow-400 flex items-center justify-center shadow-md shadow-yellow-400/30 text-slate-950 font-black text-lg">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <div class="flex items-center space-x-1.5">
+                    <span class="font-black text-xl tracking-tight text-slate-900">마케팅온</span>
+                    <span class="px-2 py-0.5 rounded-full text-[10px] font-bold lemon-badge">AI</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#about" class="hover:text-amber-600 transition">서비스 소개</a>
+                <a href="#coaching" class="hover:text-amber-600 transition">AI 코칭</a>
+                <a href="#reviews" class="hover:text-amber-600 transition">사장님 후기</a>
+                <a href="#how-to-use" class="hover:text-amber-600 transition">이용 방법</a>
+                <a href="#categories" class="hover:text-amber-600 transition">업종별 추천</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="dashboard.html" class="px-4 py-2.5 rounded-xl text-sm font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center space-x-1.5">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> <span>대시보드 바로가기</span>
+                </a>
+                <a href="dashboard.html" class="px-5 py-2.5 rounded-xl text-sm font-bold bg-yellow-400 hover:bg-yellow-300 text-slate-950 transition shadow-lg shadow-yellow-400/30">
+                    무료로 시작하기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gradient-to-b from-yellow-50/60 to-white">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full lemon-badge text-xs font-bold">
+                    <i class="fa-solid fa-sparkles text-amber-500"></i> <span>소상공인 전용 올인원 AI 셀프 마케팅 플랫폼</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.15]">
+                    직접 하기 어렵던<br>
+                    매장 마케팅, 마케팅온 AI에서<br>
+                    <span class="text-amber-500 underline decoration-yellow-300 decoration-wavy underline-offset-8">쉽게 끝내세요!</span>
+                </h1>
+                <p class="text-slate-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                    업종과 키워드만 고르면 인스타그램, 블로그, 당근마켓 홍보글부터 배너 시안, 고객 리뷰 답글까지 <strong class="text-slate-900 font-bold bg-yellow-100 px-1 rounded">3초 만에 자동 완성</strong>됩니다.
+                </p>
+                <div class="pt-2">
+                    <a href="dashboard.html" class="inline-flex items-center space-x-2 text-slate-900 hover:text-amber-600 font-bold text-base">
+                        <span>지금 AI 마케팅 대시보드 바로 열기 &gt;</span>
+                    </a>
+                </div>
+
+                <div class="pt-6 grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
+                    <div class="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-1">
+                        <div class="w-8 h-8 rounded-lg bg-yellow-100 text-amber-600 flex items-center justify-center text-sm font-bold mb-2">🪄</div>
+                        <h4 class="font-bold text-slate-900 text-sm">AI 홍보글 체험</h4>
+                        <p class="text-xs text-slate-500">가입 없이 즉시 생성</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-1">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-bold mb-2">📊</div>
+                        <h4 class="font-bold text-slate-900 text-sm">대시보드 실행</h4>
+                        <p class="text-xs text-slate-500">바로 시작하기 →</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Mockup UI Preview -->
+            <div class="lg:col-span-6 flex justify-center">
+                <div class="w-full max-w-lg bg-slate-900 rounded-3xl p-6 shadow-2xl text-white space-y-4 relative overflow-hidden">
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-xl bg-yellow-400 flex items-center justify-center text-slate-950 font-bold">☕</div>
+                            <div>
+                                <h4 class="font-bold text-sm">성수 행복카페</h4>
+                                <p class="text-[11px] text-slate-400">카페·디저트 | AI 마케팅 연동중</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-yellow-400/20 text-yellow-300">오늘의 추천 미션 도착 ✨</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-3 text-center py-2">
+                        <div class="bg-slate-800/80 p-3 rounded-2xl">
+                            <p class="text-[10px] text-slate-400">이번 달 SNS 유입</p>
+                            <p class="text-sm font-bold text-emerald-400">+42.8% ↑</p>
+                        </div>
+                        <div class="bg-slate-800/80 p-3 rounded-2xl">
+                            <p class="text-[10px] text-slate-400">리뷰 답글</p>
+                            <p class="text-sm font-bold text-yellow-400">★★★★★ 100%</p>
+                        </div>
+                        <div class="bg-slate-800/80 p-3 rounded-2xl col-span-3 text-left p-3 text-xs text-slate-300 bg-yellow-500/10 border border-yellow-500/30">
+                            💡 "비 오는 오후, 따뜻한 수제 바닐라 라떼 15% 할인 쿠폰을 발행해 보세요!"
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950 rounded-2xl p-4 space-y-3 text-xs">
+                        <div class="text-[11px] font-semibold text-yellow-400 flex items-center justify-between">
+                            <span>마케팅온 AI 비서</span>
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        </div>
+                        <p class="p-2.5 bg-slate-800 rounded-xl text-slate-200">주말에 신메뉴 크로플 홍보할 인스타 글 좀 써줘!</p>
+                        <div class="p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-xl space-y-1">
+                            <p class="font-bold text-yellow-300">✨ 인스타 추천 문구 완성!</p>
+                            <p class="text-slate-300">겉바속촉 수제 크로플과 진한 아인슈페너의 만남 🥐☕ 주말 방문 시 아메리카노 1잔 무료!</p>
+                            <p class="text-yellow-400 text-[10px]">#성수카페 #크로플맛집 #주말데이트</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-black text-slate-900">마케팅온 AI 소개</h2>
+                <p class="text-slate-600 text-sm">매장 운영만으로도 하루가 부족한 자영업자·소상공인 사장님을 위한 올인원 AI 셀프 마케팅 솔루션입니다.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-8 space-y-4 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900">마케팅온 AI란?</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        매장 운영만으로도 하루가 부족한 사장님들을 위한 올인원 AI 셀프 마케팅 솔루션입니다. 비싼 마케팅 대행사를 쓰지 않고도, 매장 업종과 날씨·시즌 이슈에 꼭 맞는 홍보 콘텐츠를 누구나 쉽고 빠르게 제작할 수 있습니다.
+                    </p>
+                </div>
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-8 space-y-4 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900">어떤 사장님께 필요한가요?</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        인스타그램·네이버 블로그·당근마켓에 무엇을 올려야 할지 막막한 사장님, 바쁜 영업 시간 때문에 고객 리뷰 답글이 자꾸 밀리는 사장님, 체계적인 프로모션 캘린더와 유입 성과 분석을 한곳에서 관리하고 싶은 모든 소상공인에게 꼭 필요합니다.
+                    </p>
+                    <div class="pt-2">
+                        <a href="dashboard.html" class="text-amber-600 font-bold text-sm hover:underline">실제 대시보드 화면에서 자세히 보기 &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Coaching Preview Section -->
+    <section id="coaching" class="py-24 bg-white border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-black text-slate-900 leading-tight">
+                    언제 어디서든,<br>
+                    1:1 AI 마케팅 코칭이<br>
+                    가능합니다.
+                </h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    글쓰기 고민은 이제 그만하세요. 오늘 날씨와 매장 상황만 알려주면 AI 마케팅 비서가 손님 발길을 이끄는 이벤트 기획과 인스타 카피를 즉시 제안합니다.
+                </p>
+                <div class="pt-2">
+                    <a href="dashboard.html" class="inline-flex items-center space-x-2 text-amber-600 font-bold text-sm hover:underline">
+                        <span>AI 콘텐츠 스튜디오 바로가기 &gt;</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50/50 border border-yellow-200 rounded-3xl p-6 space-y-4 shadow-inner">
+                <div class="flex justify-end">
+                    <div class="bg-slate-900 text-white text-xs px-4 py-3 rounded-2xl rounded-tr-none max-w-xs shadow-sm">
+                        오늘 비가 많이 오는데 카페 손님을 늘릴 수 있는 게릴라 이벤트 문구 추천해 줘! ☔
+                    </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-yellow-400 text-slate-950 flex items-center justify-center text-xs font-black shrink-0">AI</div>
+                    <div class="bg-white border border-slate-200 text-slate-800 text-xs p-4 rounded-2xl rounded-tl-none max-w-sm space-y-2 shadow-sm">
+                        <p class="font-bold text-amber-600">✨ AI 맞춤 제안</p>
+                        <p>"비 오는 오후, 달콤한 수제 바닐라 라떼 15% 할인 + 수제 쿠키 1개 증정! 🌧️☕ 오늘 매장 방문 시 즉시 적용해 드려요."</p>
+                        <p class="text-amber-600 text-[10px]">#동네카페 #비오는날데이트 #수제라떼맛집</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-black text-slate-900">실제 후기로 보는 마케팅온 AI</h2>
+                <p class="text-slate-600 text-sm">전국 소상공인 사장님들이 직접 경험하고 남긴 생생한 활용 후기를 확인해 보세요.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 space-y-4 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2.5">
+                                <div class="w-9 h-9 rounded-full bg-yellow-100 text-amber-700 flex items-center justify-center font-bold text-xs">김</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">김지현</h4>
+                                    <p class="text-[10px] text-slate-500">연남동 OO카페 · 3년차</p>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">카페</span>
+                        </div>
+                        <div class="text-amber-400 text-xs">★★★★★</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">"비 오는 날 아침마다 AI가 추천해 준 라떼 할인 글을 인스타랑 당근에 올렸는데, 평소 한산하던 오후 시간대에 손님이 꽉 찼어요! 글 쓰는 스트레스가 사라졌습니다."</p>
+                    </div>
+                    <span class="text-[10px] text-slate-400 pt-3 border-t border-slate-100">2026.10.28 이용 후기</span>
+                </div>
+
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 space-y-4 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2.5">
+                                <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xs">박</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">박성훈</h4>
+                                    <p class="text-[10px] text-slate-500">성수동 OO식당 · 5년차</p>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">음식점</span>
+                        </div>
+                        <div class="text-amber-400 text-xs">★★★★★</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">"주방에서 불 잡느라 바빠서 네이버 리뷰 답글을 몇 주씩 밀리곤 했어요. 마감 후 버튼 한 번만 누르면 정성스러운 답글이 바로 완성돼서 단골손님이 늘었습니다."</p>
+                    </div>
+                    <span class="text-[10px] text-slate-400 pt-3 border-t border-slate-100">2026.11.02 이용 후기</span>
+                </div>
+
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 space-y-4 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2.5">
+                                <div class="w-9 h-9 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-xs">최</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">최유진</h4>
+                                    <p class="text-[10px] text-slate-500">분당 OO네일샵 · 1인샵</p>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">네일샵</span>
+                        </div>
+                        <div class="text-amber-400 text-xs">★★★★★</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">"시술 사진만 찍어두고 멘트를 못 정해서 업로드를 미뤘었는데, 이제 계절별 네일 트렌드 키워드와 해시태그까지 3초 만에 뽑아주니 신규 예약 문의가 2배 늘었어요."</p>
+                    </div>
+                    <span class="text-[10px] text-slate-400 pt-3 border-t border-slate-100">2026.11.05 이용 후기</span>
+                </div>
+
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 space-y-4 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2.5">
+                                <div class="w-9 h-9 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center font-bold text-xs">이</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">이수빈</h4>
+                                    <p class="text-[10px] text-slate-500">마포 OO공방 · 클래스</p>
+                                </div>
+                            </div>
+                            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">공방</span>
+                        </div>
+                        <div class="text-amber-400 text-xs">★★★★★</div>
+                        <p class="text-xs text-slate-600 leading-relaxed">"혼자 공방을 운영하면서 월 120만 원짜리 대행사를 끊고 마케팅온 AI로 바꿨어요. 블로그 포스팅 키워드까지 잡아줘서 주말 클래스가 매주 마감됩니다."</p>
+                    </div>
+                    <span class="text-[10px] text-slate-400 pt-3 border-t border-slate-100">2026.11.07 이용 후기</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="py-24 bg-white border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-black text-slate-900">마케팅온 AI 이용 방법</h2>
+                <p class="text-slate-600 text-sm">단계별 스텝을 확인하고 스마트폰 화면에서 직접 AI 홍보 문구를 생성해 보세요!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="p-5 rounded-2xl bg-yellow-50 border border-yellow-200 shadow-sm space-y-1">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-yellow-400 text-slate-950 flex items-center justify-center text-xs font-bold">1</span>
+                            <h4 class="font-bold text-slate-900 text-sm">업종 및 매장 등록</h4>
+                        </div>
+                        <p class="text-xs text-slate-600 pl-9">카페, 음식점, 뷰티, 공방 등 우리 가게 업종과 지역만 입력하면 시가 상권과 고객 취향을 자동으로 분석합니다.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200/85 shadow-sm space-y-1">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-bold">2</span>
+                            <h4 class="font-bold text-slate-900 text-sm">홍보 채널 선택</h4>
+                        </div>
+                        <p class="text-xs text-slate-500 pl-9">인스타그램, 네이버 블로그, 당근마켓 중 홍보를 원하시는 채널을 선택해 채널별 맞춤 포맷을 선점합니다.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200/85 shadow-sm space-y-1">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-bold">3</span>
+                            <h4 class="font-bold text-slate-900 text-sm">키워드 입력 및 AI 생성</h4>
+                        </div>
+                        <p class="text-xs text-slate-500 pl-9">'신메뉴 출시', '비 오는 날 할인', '주말 이벤트' 등 키워드를 선택하면 감성 카피와 인기 해시태그가 즉시 완성됩니다.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200/85 shadow-sm space-y-1">
+                        <div class="flex items-center space-x-3">
+                            <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-bold">4</span>
+                            <h4 class="font-bold text-slate-900 text-sm">원클릭 복사 및 예약</h4>
+                        </div>
+                        <p class="text-xs text-slate-500 pl-9">완성된 문구를 복사해 바로 업로드하거나, 마케팅온 대시보드 캘린더에 예약해 꾸준히 가게를 알립니다.</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 flex justify-center">
+                    <div class="w-full max-w-md bg-slate-900 text-white rounded-3xl p-6 shadow-2xl space-y-4">
+                        <div class="flex justify-between items-center text-xs text-slate-400 pb-3 border-b border-slate-800">
+                            <span>마케팅온 AI 스튜디오</span>
+                            <span class="text-yellow-400 font-bold">STEP 01</span>
+                        </div>
+                        <div class="p-4 bg-slate-800 rounded-2xl space-y-2">
+                            <p class="text-[11px] text-slate-400">간편 매장 세팅</p>
+                            <h4 class="font-bold text-sm">우리 가게 정보를 알려주세요</h4>
+                            <p class="text-xs text-slate-400">AI가 지역 상권과 단골 취향을 분석합니다.</p>
+                        </div>
+                        <div class="p-4 bg-slate-950 rounded-2xl space-y-2 text-xs">
+                            <p class="text-slate-400">매장명</p>
+                            <div class="p-3 bg-slate-900 rounded-xl font-bold text-white">성수 행복카페</div>
+                            <p class="text-slate-400 pt-1">업종 및 상권</p>
+                            <div class="p-3 bg-slate-900 rounded-xl text-slate-300">카페·디저트 / 서울 성수동</div>
+                        </div>
+                        <a href="dashboard.html" class="block w-full py-3 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-bold text-center rounded-xl text-xs transition">
+                            다음: 홍보 채널 선택하기 →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-24 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-black text-slate-900">업종별 맞춤 추천</h2>
+                <p class="text-slate-600 text-sm">내 가게에 딱 맞는 템플릿으로 지금 바로 마케팅을 시작해 보세요.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 text-center space-y-3 shadow-sm hover:border-yellow-400 transition">
+                    <div class="text-4xl">☕</div>
+                    <h4 class="font-bold text-slate-900 text-sm">카페 / 베이커리</h4>
+                    <p class="text-xs text-slate-500">신메뉴 홍보 · 디저트릴스</p>
+                </div>
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 text-center space-y-3 shadow-sm hover:border-yellow-400 transition">
+                    <div class="text-4xl">🍽️</div>
+                    <h4 class="font-bold text-slate-900 text-sm">일반 음식점</h4>
+                    <p class="text-xs text-slate-500">시그니처 메뉴 · 당일 이벤트</p>
+                </div>
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 text-center space-y-3 shadow-sm hover:border-yellow-400 transition">
+                    <div class="text-4xl">✨</div>
+                    <h4 class="font-bold text-slate-900 text-sm">뷰티 / 에스테틱</h4>
+                    <p class="text-xs text-slate-500">비포에프터 · 네일아트 릴스</p>
+                </div>
+                <div class="bg-white border border-slate-200/85 rounded-3xl p-6 text-center space-y-3 shadow-sm hover:border-yellow-400 transition">
+                    <div class="text-4xl">🎨</div>
+                    <h4 class="font-bold text-slate-900 text-sm">공방 / 클래스</h4>
+                    <p class="text-xs text-slate-500">원데이클래스 모집 마감</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 py-12 bg-white text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 마케팅온 AI (MKON AI). All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="dashboard.html" class="hover:text-amber-600 transition font-bold text-amber-600">대시보드 바로가기 →</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
